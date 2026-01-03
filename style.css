@@ -46,17 +46,21 @@ h2 {
   margin-bottom: 20px;
 }
 
-.certifications ul {
-  list-style: none;
-  padding: 0;
+.cert-item {
+  background: rgba(255, 255, 255, 0.08);
+  color: #ffffff;
+  padding: 18px 22px;
+  margin-bottom: 16px;
+  border-left: 4px solid #38bdf8;
+  border-radius: 8px;
+  backdrop-filter: blur(6px);
 }
 
-.certifications li {
-  background: white;
-  padding: 15px 20px;
-  margin-bottom: 15px;
-  border-left: 4px solid #0f172a;
-  box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+.cert-item p {
+  color: #cbd5e1;
+  margin-top: 5px;
 }
+
+
 
 
