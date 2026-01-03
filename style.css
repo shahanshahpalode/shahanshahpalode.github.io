@@ -90,6 +90,51 @@ h2 {
   color: #ffffff;
 }
 
+.labs {
+  margin-top: 40px;
+}
+
+.lab-card {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 25px;
+  border-radius: 12px;
+  border-left: 4px solid #22c55e;
+  backdrop-filter: blur(6px);
+}
+
+.lab-card h3 {
+  color: #22c55e;
+  margin-bottom: 10px;
+}
+
+.lab-card p {
+  color: #e5e7eb;
+  margin-bottom: 15px;
+}
+
+.lab-card ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 15px;
+}
+
+.lab-card li {
+  color: #cbd5e1;
+  margin-bottom: 6px;
+}
+
+.lab-link {
+  display: inline-block;
+  margin-top: 10px;
+  color: #22c55e;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.lab-link:hover {
+  text-decoration: underline;
+}
+
 
 
 
