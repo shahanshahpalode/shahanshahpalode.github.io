@@ -291,6 +291,25 @@ h2 {
   transform: translateY(-2px);
 }
 
+.footer {
+  margin-top: 60px;
+  padding: 30px 20px;
+  text-align: center;
+  font-size: 14px;
+  color: #cbd5e1;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.footer a {
+  color: #38bdf8;
+  text-decoration: none;
+  margin: 0 6px;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
 
 
 
