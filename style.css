@@ -35,10 +35,14 @@ h1 {
 }
 
 section {
-  max-width: 800px;
-  margin: 40px auto;
-  text-align: left;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(6px);
+  padding: 40px 30px;
+  margin: 50px auto;
+  max-width: 900px;
+  border-radius: 14px;
 }
+
 
 h2 {
   border-bottom: 2px solid #0f172a;
@@ -54,6 +58,14 @@ h2 {
   border-left: 4px solid #38bdf8;
   border-radius: 8px;
   backdrop-filter: blur(6px);
+}
+.cert-item {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cert-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
 }
 
 .cert-item p {
@@ -150,9 +162,50 @@ h2 {
   transition: 0.3s ease;
 }
 
+.linkedin-btn {
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
 .linkedin-btn:hover {
   background: #084d94;
+  transform: translateY(-2px);
 }
+@media (max-width: 768px) {
+
+  body {
+    padding: 0;
+  }
+
+  section {
+    margin: 30px 15px;
+    padding: 30px 20px;
+  }
+
+  h1 {
+    font-size: 26px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  .profile-img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .skill-group li {
+    font-size: 13px;
+    padding: 7px 12px;
+  }
+
+  .linkedin-btn {
+    padding: 9px 16px;
+    font-size: 14px;
+  }
+}
+
+
 
 
 
