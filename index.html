@@ -7,112 +7,138 @@
 <body>
   <div class="overlay">
 
-<img src="images/profile.jpg" alt="Profile Photo" class="profile-img">
+    <img src="images/profile.jpg" alt="Profile Photo" class="profile-img">
 
-<h1>Shahanshah S Palode</h1>
-<p class="subtitle">Cybersecurity Graduate | Security Enthusiast</p>
+    <h1>Shahanshah S Palode</h1>
+    <p class="subtitle">Cybersecurity Graduate | Security Enthusiast</p>
+
     <div class="social-links">
-  <a href="https://www.linkedin.com/in/shahanshahpalode"
-     target="_blank"
-     class="linkedin-btn">
-     🔗 LinkedIn
-  </a>
-</div>
+      <a href="https://www.linkedin.com/in/shahanshahpalode"
+         target="_blank"
+         class="linkedin-btn">
+         🔗 LinkedIn
+      </a>
+    </div>
 
-<section class="about">
-  <h2>About Me</h2>
-  <p>
-    I am a <strong>Cybersecurity Graduate</strong> with a strong interest in
-    protecting systems, networks, and data from cyber threats.
-  </p>
-  <p>
-    I am deeply passionate about cybersecurity and continuously learning
-    about security concepts such as ethical hacking, network security,
-    vulnerability assessment, and cyber defense.
-  </p>
-</section>
-  <section class="certifications">
-  <h2>Certifications</h2>
+    <!-- ABOUT -->
+    <section class="about fade-in">
+      <h2>About Me</h2>
+      <p>
+        I am a <strong>Cybersecurity Graduate</strong> with a strong interest in
+        protecting systems, networks, and data from cyber threats.
+      </p>
+      <p>
+        I am deeply passionate about cybersecurity and continuously learning
+        about security concepts such as ethical hacking, network security,
+        vulnerability assessment, and cyber defense.
+      </p>
+    </section>
 
-  <div class="cert-item">
-    <strong>Privacy and Security in Online social media</strong>
-    <p>NPTEL</p>
+    <!-- CERTIFICATIONS -->
+    <section class="certifications fade-in">
+      <h2>Certifications</h2>
+
+      <div class="cert-item">
+        <strong>Privacy and Security in Online Social Media</strong>
+        <p>NPTEL</p>
+      </div>
+
+      <div class="cert-item">
+        <strong>Gen AI in Robotics</strong>
+        <p>NASSCOM</p>
+      </div>
+
+      <div class="cert-item">
+        <strong>Certified Red Team Operations Management (CRTOM)</strong>
+        <p>RED TEAM LEADERS</p>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="skills fade-in">
+      <h2>Cybersecurity Skills & Tools</h2>
+
+      <div class="skill-group">
+        <h3>Security Tools</h3>
+        <ul>
+          <li>Nmap</li>
+          <li>Wireshark</li>
+          <li>Burp Suite</li>
+          <li>Metasploit</li>
+        </ul>
+      </div>
+
+      <div class="skill-group">
+        <h3>Operating Systems</h3>
+        <ul>
+          <li>Kali Linux</li>
+          <li>Linux (Ubuntu)</li>
+          <li>Windows</li>
+        </ul>
+      </div>
+
+      <div class="skill-group">
+        <h3>Core Concepts</h3>
+        <ul>
+          <li>Network Security</li>
+          <li>Ethical Hacking</li>
+          <li>Vulnerability Assessment</li>
+          <li>Web Application Security</li>
+          <li>Cyber Defense Fundamentals</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- LABS -->
+    <section class="labs fade-in">
+      <h2>Labs & Hands-On Practice</h2>
+
+      <div class="lab-card">
+        <h3>TryHackMe</h3>
+        <p>
+          Actively practicing cybersecurity concepts through hands-on labs
+          and guided learning paths on TryHackMe.
+        </p>
+
+        <ul>
+          <li>Networking Fundamentals</li>
+          <li>Linux & Windows Basics</li>
+          <li>Web Application Security</li>
+          <li>Offensive & Defensive Security</li>
+        </ul>
+
+        <a href="https://tryhackme.com/p/shahanshah"
+           target="_blank"
+           class="lab-link">
+           🔗 View My TryHackMe Profile
+        </a>
+      </div>
+    </section>
+
   </div>
 
-  <div class="cert-item">
-    <strong>Gen AI in Robotics</strong>
-    <p>Nasscom</p>
-  </div>
+  <!-- SCROLL ANIMATION SCRIPT -->
+  <script>
+    const faders = document.querySelectorAll('.fade-in');
 
-  <div class="cert-item">
-    <strong>Certified Red Team Operations Management(CRTOM)</strong>
-    <p>RED TEAM LEADERS</p>
-  </div>
+    const appearOptions = {
+      threshold: 0.2
+    };
 
-</section>
-    <section class="skills">
-  <h2>Cybersecurity Skills & Tools</h2>
+    const appearOnScroll = new IntersectionObserver(function(entries, observer) {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add('show');
+        observer.unobserve(entry.target);
+      });
+    }, appearOptions);
 
-  <div class="skill-group">
-    <h3>Security Tools</h3>
-    <ul>
-      <li>Nmap</li>
-      <li>Wireshark</li>
-      <li>Burp Suite</li>
-      <li>Metasploit</li>
-    </ul>
-  </div>
+    faders.forEach(fader => {
+      appearOnScroll.observe(fader);
+    });
+  </script>
 
-  <div class="skill-group">
-    <h3>Operating Systems</h3>
-    <ul>
-      <li>Kali Linux</li>
-      <li>Linux (Ubuntu)</li>
-      <li>Windows</li>
-    </ul>
-  </div>
-
-  <div class="skill-group">
-    <h3>Core Concepts</h3>
-    <ul>
-      <li>Network Security</li>
-      <li>Ethical Hacking</li>
-      <li>Vulnerability Assessment</li>
-      <li>Web Application Security</li>
-      <li>Cyber Defense Fundamentals</li>
-    </ul>
-  </div>
-</section>
-<section class="labs">
-  <h2>Labs & Hands-On Practice</h2>
-
-  <div class="lab-card">
-    <h3>TryHackMe</h3>
-    <p>
-      Actively practicing cybersecurity concepts through hands-on labs
-      and guided learning paths on TryHackMe.
-    </p>
-
-    <ul>
-      <li>Networking Fundamentals</li>
-      <li>Linux & Windows Basics</li>
-      <li>Web Application Security</li>
-      <li>Offensive & Defensive Security</li>
-    </ul>
-
-    <a href="https://tryhackme.com/p/shahanshah"
-       target="_blank"
-       class="lab-link">
-       🔗 View My TryHackMe Profile
-    </a>
-  </div>
-</section>
-
-
-
-  </div>
 </body>
-
 </html>
 
 
