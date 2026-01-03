@@ -135,6 +135,25 @@ h2 {
   text-decoration: underline;
 }
 
+.social-links {
+  margin-top: 20px;
+}
+
+.linkedin-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #0a66c2;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 6px;
+  transition: 0.3s ease;
+}
+
+.linkedin-btn:hover {
+  background: #084d94;
+}
+
 
 
 
