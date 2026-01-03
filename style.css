@@ -61,6 +61,35 @@ h2 {
   margin-top: 5px;
 }
 
+.skills {
+  margin-top: 40px;
+}
+
+.skill-group {
+  margin-bottom: 30px;
+}
+
+.skill-group h3 {
+  color: #38bdf8;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.skill-group ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.skill-group li {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 8px 14px;
+  margin: 6px;
+  border-radius: 20px;
+  font-size: 14px;
+  color: #ffffff;
+}
+
 
 
 
