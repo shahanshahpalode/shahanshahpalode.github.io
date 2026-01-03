@@ -218,6 +218,34 @@ h2 {
   transform: translateY(0);
 }
 
+.education {
+  margin-top: 40px;
+}
+
+.edu-card {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 25px;
+  border-radius: 12px;
+  border-left: 4px solid #a855f7;
+  backdrop-filter: blur(6px);
+}
+
+.edu-card h3 {
+  margin-bottom: 8px;
+  color: #a855f7;
+}
+
+.edu-institute {
+  color: #e5e7eb;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.edu-year {
+  color: #cbd5e1;
+  font-size: 14px;
+}
+
 
 
 
